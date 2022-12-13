@@ -1,0 +1,155 @@
+@import url("./fontes/Montserrat-VariableFont_wght.ttf");
+@import url("./fontes/Roboto/Roboto-Regular.ttf");
+
+:root {
+    --cor1: #ffb703;
+    --cor2: #fb8500;
+    --cor3: #E87C00;
+
+
+    --cor4: #ffffff;
+    --cor5: #000000;
+    --cor6: #aca0a0;
+
+    --fonte_padrao: 'Montserrat', sans-serif;
+    --fonte_alternativa: 'Roboto', sans-serif;
+}
+
+.padrao {
+    display: flex;
+    font-family: var(--fonte_padrao);
+    color: var(--cor5);
+
+}
+
+.resize:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.recolor:hover{
+    cursor:pointer;
+    background-color: var(--cor3);
+    transition: 0.2s;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    font-family: var(--fonte_padrao);
+}
+
+/* parte da logo */
+
+.cabecalho {
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--cor5);
+
+    background-color: var(--cor1);
+
+    box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 75%);
+}
+nav>button{
+    border: none;
+    background-color: var(--cor1);
+}
+
+#menu_icon {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logo {
+    width: 7%;
+    height: 5%;
+
+    padding: 1px 6px;
+}
+
+#menu_icon:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+}
+
+#menu_icon.active {
+    transform: rotate(-0.25turn);
+
+}
+
+.botoes_cabecalho{
+    position: absolute;
+    height: 50px;
+    gap: 20px;
+    right: 75px; 
+
+    align-items: center;
+}
+.botoes_cabecalho>a>img{
+    width: 80%;
+}
+hr{
+    background-color: var(--cor1);
+    width: 100%;
+    height: 2px;
+    border: none;
+
+    margin: 0px 0px 10px 0px;
+}
+
+/* CARRINHO */
+main{
+    height: 70vh;
+    margin: 20px;
+
+}
+main > h1 {
+    color: var(--cor3);
+    display: flex;
+    justify-content: center;
+}
+.carrinho{
+    background-color: var(--cor1);
+    width: 100%;
+    height: 60vh;
+
+    flex-direction: column;
+}
+.cabecalho_carrinho{
+    background-color: var(--cor3);
+    justify-content: space-around;
+}
+.itens{
+    width: 25%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.itens>img{
+    width: 40%;
+}
+.itens>input{
+    width: 20%;
+}
+
+.funcionarios>aside{
+    width: 33.5%;
+}
+.funcionarios>aside>img{
+    width: 20%;
+}
